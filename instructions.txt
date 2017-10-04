@@ -1,0 +1,29 @@
+There are 100 data sets included in this collection, named 
+patientstatus[0-99].ds.  Each line in a data set represents a health care
+record where a person in the simulation city did one of three things:
+visit an ED department, purchase medication, or was absent from school/work.
+The fields in the data set can take on the following values:
+
+1. XY: The region the case comes from (NW, N, NE, W, C, E, SW, S, SE)
+2. age: child, working or senior
+3. gender: male or female
+4. flu: none, low, high or decline
+5. day_of_week: sat, sun or weekday
+6. weather: hot or cold
+7. season: winter, spring, summer or fall
+8. action: purchase, evisit or absent
+9. reported_symptom: none, respiratory, nausea or rash
+10. drug: none, nyquil, aspirin or vomit-b-gone
+11. date: Jan-01-2002 to Dec-31-2003
+12. daynum: The date represented as an integer index
+
+The file release_daycode.txt contains information about the anthrax attack.
+The first column contains the index of the patientstatus*.ds file and the
+second column contains the daynum of the anthrax attack.  For example,
+if a row in release_daycode.txt contains 21 74282, then patientstatus21.ds
+has an anthrax attack on daynum 74282.
+
+References:
+Wong, W.K., Moore, A. W., Cooper, G., and Wagner, M. (2003).  Bayesian
+Network Anomaly Pattern Detection for Disease Outbreaks.  To appear in ICML 
+2003.
